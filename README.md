@@ -1,6 +1,6 @@
 # ALL-IN-ONE RECOMMENDER 🎥 🎵 📚
 
-A web App deployed on Strealit CLoud ,that recommends MOVIES, SONGS and BOOKS.
+A web App deployed on Streamlit CLoud ,that recommends MOVIES, SONGS and BOOKS.
 
 You can try out this app [here.] https://share.streamlit.io/palak296/recommendation_system/main/app.py
 
@@ -35,7 +35,7 @@ Mathematically Cosine similarity measures the similarity between two vectors of 
 In Python the cosine similarity measures the similarity between vector lists by calculating the cosine angle between the two vector lists. If you consider the cosine function, its value at 0 degrees is 1 and -1 at 180 degrees. This means for two overlapping vectors, the value of cosine will be maximum and minimum for two precisely opposite vectors.
 
 You can get more information about cosine Similarity [here.](https://www.delftstack.com/howto/python/cosine-similarity-between-lists-python/#use-the-scipy-module-to-calculate-the-cosine-similarity-between-two-lists-in-python)
-Here we have used [cosine_similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html) function from sklearn.
+Here I have used [cosine_similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html) function from sklearn.
 
 ```python
 from sklearn.metrics.pairwise import cosine_similarity
@@ -47,7 +47,7 @@ similarity
 ###  Feature extraction (or vectorization)
 Scikit-learn’s CountVectorizer is used to convert a collection of text documents to a vector of term/token counts. It also enables the pre-processing of text data prior to generating the vector representation. This functionality makes it a highly flexible feature representation module for text.
 You can get more information about cosine Similarity [here.](https://www.educative.io/edpresso/countvectorizer-in-python)
-Here we have done vectorization using [CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) function from sklearn
+Here I have done vectorization using [CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) function from sklearn
 
 ```python
 from sklearn.feature_extraction.text import CountVectorizer
@@ -56,7 +56,7 @@ vector = cv.fit_transform(new['tags']).toarray()
 ```
 
 
-Than we made a function which gives the recommendation based on the given input.
+Than I made a function which gives the recommendation based on the given input.
 ```python
 def recommend(movie):
     index = new[new['title'] == movie].index[0]
@@ -64,6 +64,18 @@ def recommend(movie):
     for i in distances[1:7]:
         print(new.iloc[i[0]].title)
 ```
+
+## Features
+- 3 major recommendations between which the user can toggle anytime
+- Added authentication
+- Sort on the basis of popularity
+- Gives detailed overview along with genres, cast, rating, description etc.
+- Ability to show or hide the lyrics for each song
+- Ability to switch the width of the main content area
+- Ability to choose between a pastel, light and dark theme.
+- Handy hamburger menu with options to report a bug, share the web app, view source code, read about it, see credits, etc
+- Cross Platform & Responsive - The site works and looks pretty on any device it is viewed on, irrespective of screen shape and size
+
  # Flow of Application
  ### Selection of Input
  The app assists in selection of input (Movie, Song, Book)
@@ -78,6 +90,12 @@ The app also shows respective details based on the recommended output.
 The app also has feature to change its Theme , we can select white theme or dark theme or device oriented theme
 ![Screenshot](images/theme.JPG)
 
+## Development Timeline
+
+- Week 1 - Research and ideation
+- Week 2 - Visualising the data in jupyter notebook/Backend Development
+- Week 3 - streamlit frontend, initially focusing on displaying all the recommendations appropriately
+- Week 4 - Deployement and Submission
  
 ## Run Locally
 
