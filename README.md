@@ -2,7 +2,7 @@
 
 A web App deployed on Strealit CLoud ,that recommends MOVIES, SONGS and BOOKS.
 
-You can try out this app [here.]
+You can try out this app [here.] https://share.streamlit.io/palak296/recommendation_system/main/app.py
 
 ![image](https://user-images.githubusercontent.com/74818938/170822839-462f45a8-27ce-4853-b301-b71e08060471.png)
 
