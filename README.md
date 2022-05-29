@@ -104,3 +104,12 @@ Start the server
 ```bash
   streamlit run main.py
   ```
+CREDENTIALS FOR AUTHENTICATON :
+```
+username : palak
+password : test1234
+```
+```
+username : plk
+password : abcd1234
+```
